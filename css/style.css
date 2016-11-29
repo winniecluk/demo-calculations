@@ -1,0 +1,31 @@
+/** {
+  border: 1px solid black;
+}*/
+
+.container {
+  width: 40vw;
+  padding: 0;
+  display: table;
+  float: left;
+}
+
+.row {
+  display: table-row;
+}
+
+.column {
+  display: table-cell;
+  padding: 8px;
+}
+
+.vertical-center {
+  vertical-align: middle;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.right {
+  padding-left: 40px;
+}

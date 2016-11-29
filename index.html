@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column narrow vertical-center">
+        <p>
+          Add a number
+        </p>
+      </div>
+      <div class="column narrow vertical-center">
+        <p>
+          <input type="range" min="0" max="6" step="1" onchange="updateAdd(this.value)" id="addSlider">
+        </p>
+          <input class="text-center" id="add-input" type="text" disabled>
+      </div>
+    </div> <!-- this closes row -->
+    <div class="row">
+      <div class="column narrow vertical-center">
+        <p>
+          Subtract a number
+        </p>
+      </div>
+      <div class="column narrow vertical-center">
+        <p>
+          <input type="range" min="0" max="6" step="1" onchange="updateSubtract(this.value)" id="subtractSlider">
+        </p>
+        <p>
+          <input class="text-center" id="subtract-input" type="text" disabled>
+        </p>
+      </div>
+    </div> <!-- this closes row-->
+    <div class="row">
+      <div class="column narrow vertical-center">
+        <p>
+          Divide by number
+        </p>
+      </div>
+      <div class="column narrow vertical-center">
+        <p>
+          <input type="range" min="1" max="5" step="0.5" onchange="updateDivide(this.value)" id="divideSlider">
+        </p>
+        <p>
+          <input class="text-center" id="divide-input" type="text" disabled>
+        </p>
+      </div>
+    </div> <!-- this closes divide row -->
+    <div class="row">
+      <div class="column narrow vertical-center">
+        <p>
+          Multiply by number
+        </p>
+      </div>
+      <div class="column narrow vertical-center">
+        <p>
+          <input type="range" min="0" max="6" step="1" onchange="updateMultiply(this.value)" id="multiplySlider">
+        </p>
+        <p>
+          <input class="text-center" id="multiply-input" type="text" disabled>
+        </p>
+      </div>
+    </div>
+  </div> <!-- this closes container -->
+
+  <div id="results">
+    <div class="row">
+      <div class="column right">
+        <p>
+        Result: <input type="text" id="result-box" disabled>
+        </p>
+        <p>
+          Equation: ([Addanumber - subtractanumber] / dividebynumber) * multiplybynumber
+        </p>
+        <p>
+          <button id="reset-button">Reset</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
