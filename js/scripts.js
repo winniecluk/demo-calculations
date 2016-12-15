@@ -55,6 +55,7 @@
   function reset(){
     clearInputs(addInput, subtractInput, multiplyInput, divideInput);
     clearInputs(addSlider, subtractSlider, multiplySlider, divideSlider);
+    result = 0;
     resultBox.value = 0;
   }
 
